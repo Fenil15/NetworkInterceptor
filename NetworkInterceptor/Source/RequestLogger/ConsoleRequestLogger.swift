@@ -16,7 +16,7 @@ public class ConsoleRequestLogger: RequestLogger {
 
     public func logRequest(urlRequest: URLRequest) {
         requestCount = requestCount + 1
-        NSLog("Request #\(requestCount): CURL => \(urlRequest.cURL)")
+        print("Request #\(requestCount): CURL => \(urlRequest.cURL)")
     }
     
     public func excludedDomain() -> [String] {
